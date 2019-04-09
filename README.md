@@ -1,4 +1,4 @@
-Years ago, I was looking for a low cost GPS tracker to keep track of a family
+A while ago, I was looking for a low cost GPS tracker to keep track of a family
 member who was in the early stages of dementia. She still drove her car and only
 had small memory lapses. But when they happened, she would get lost and forget
 where she was.  We found a product but it had a costly monthly subscription.
