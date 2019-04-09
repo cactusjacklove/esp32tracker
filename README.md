@@ -14,5 +14,7 @@ board.
 So here is the code, updated to the latest LuaRTOS and released as GPL
 (it's a mess, I'll be cleaning it up and improving it).
 
+See ESP32 GeoTracker.png  for a diagram of how to wire up  Adafruit Huzzah32 with a Sim808 to run this software.
+
 Hardware, configuration and usage instructions are coming soon!  This code needs cleaning!
 Enjoy!
