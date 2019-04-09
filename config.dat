@@ -1,0 +1,43 @@
+-- All time units are in minutes.. fractional minutes are allowed 
+Park = {
+   -- How long not moving do we consider parked?
+   whenidle = 5,
+   -- How often do we beacon when parked?
+   beaconrate = 40,
+}
+
+Modem = {
+   -- List of phone numbers to SMS to for beacons
+   destphones = {"+63999999",}
+}
+
+GPS  = {
+   -- Minimum satellites we need to see before considering it a valid fix
+   minsats = 6,
+   -- How long do we keep looking for minimum satellites (to conserve battery)
+   maxfixtime = 2,
+   -- Default checkrate (to see if we are entering fence)
+   defaultcheckrate = 1,
+}
+
+Beacon = {
+   -- Default rate for beaconing
+   defaultrate = 4,
+   -- Should always be true for now... unless we have a real battery backed RTC
+   useGPStime = true,
+}
+
+-- You can have as many fences as you want (including none)
+-- Fences are checked in order they appear here. The first positive
+-- hit causes the rest to be ignored.
+-- nobeacon is used to conserve battery and prevent annoying beacons when at
+-- places like home neighborhood, school, shopping malls, etc. 
+
+Fences = {
+   {name= "Home", circle = {coords={16.390970, 120.592274}, meters=50},
+    nobeacon=true,checkrate=1, beaconrate=4},
+
+   {name= "School", circle = {coords={16.390170, 120.591358}, meters=75},
+    nobeacon=false,checkrate=1, beaconrate=2},
+}
+
